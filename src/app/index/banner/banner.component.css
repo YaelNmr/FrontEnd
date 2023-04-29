@@ -1,0 +1,15 @@
+/*Banner*/
+section.banner{
+    background-image: url(../../../assets/img/fondo1.png);
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h1.intro{
+    padding-top: 10%;
+    font-size: 4rem;
+  }
+            /*Fin Banner*/
+  

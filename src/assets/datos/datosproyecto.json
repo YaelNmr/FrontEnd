@@ -1,0 +1,148 @@
+{
+    "nombre": "¡Hola, soy Yael!",
+    "titulo": "Desarrolladora Web Full Stack Jr.",
+    "profileImage": "../../../assets/img/pic4.jpg",
+    "subtitulo": "Acerca de mí",
+    "acercadeMi": "Me considero una persona autodidacta. Me encanta aprender cosas nuevas, leer, investigar, sumar conocimientos. Desde muy chica estoy inmersa en el mundo de la informática y la tecnología porque ¡amo los videojuegos y la PC!. Trabajo como diseñadora, Social Media Manager y Community Manager en mí emprendimiento de sublimaciones. Con respecto a la programación, gracias a Argentina Programa se me abrió la puerta a un mundo completamente distinto y me encanta. Siempre busco sumar habilidades para seguir creciendo y progresando en todo ámbito.",
+    
+    "experiencias": [
+        {
+            "id":1,
+            "nombre": "Kuma Rosario",
+            "puesto": "Cofundadora",
+            "inicioyFin": "(2017-actualidad)",
+            "imagen": "../../../assets/img/logo kuma 1.jpg",
+            "descripcion": "Sublimaciones personalizadas. Me encargo de diseñar, tomar pedidos, ventas, entregas y manejo de redes sociales. Máquinas que uso: planchas termoestampadoras de remeras y tazas, impresora con tintas especiales para sublimación, plotter de corte."   
+        },
+        {
+            "id":2,
+            "nombre": "DVD video Show.",
+            "puesto": "Atención al cliente",
+            "inicioyFin": "(2014-2014)",
+            "imagen": "../../../assets/img/closed-cartel.jpg",
+            "descripcion": "Empleada a cargo de atender el vídeoclub."    
+        },
+        {
+            "id":3,
+            "nombre": "Niñera y tareas de cuidado",
+            "puesto": "Más experiencias",
+            "inicioyFin": "(2012, 2013, 2015, 2016)",
+            "imagen": "../../../assets/img/trabajo.png",
+            "descripcion": "Durante varios períodos de tiempo, trabajé haciendo tareas del hogar y cuidando niños y niñas en casas particulares."
+        },
+        {
+            "id":4,
+            "nombre": "Dietética JMA",
+            "puesto": "Atención al cliente",
+            "inicioyFin": "(2011-2011)",
+            "imagen": "../../../assets/img/closed-cartel.jpg",
+            "descripcion": "Empleada a cargo de atender la dietética, con turnos rotativos."
+        },    
+        {
+            "id":5,
+            "nombre": "Clases particulares de inglés",
+            "puesto": "Más experiencias",
+            "inicioyFin": "(2009 a 2018)",
+            "imagen":"../../../assets/img/trabajo.png",
+            "descripcion": "En mí casa a menudo daba clases de apoyo de inglés para alumnos de nivel primario y secundario."    
+        }
+    ],
+
+    "estudios":[
+        {
+            "id":1,
+            "titulo": "Desarrollo Web Full Stack Jr.",
+            "institucion": "Argentina Programa: 4ta edición. #SéProgramar. #YoProgramo.",
+            "logo":"../../../assets/img/MINIATURA-ARGEPROGR.jpg",
+            "inicio": "(2022)",
+            "fin": "(2023)"
+        },
+        {
+            "id":2,
+            "titulo": "Profesorado de Ingles",
+            "institucion": "Instituto de Educación Superior N.º 28 Olga Cossettini.",
+            "logo":"../../../assets/img/instituto.jpg",
+            "inicio": "(2012)",
+            "fin": "(2012)"
+        },
+        {
+            "id":3,
+            "titulo": "Economía y Gestión de las Organizaciones.",
+            "institucion": "Escuela de Educación Secundaria Técnica Profesional Nº 638 Margarita Mazza de Carlés.",
+            "logo":"../../../assets/img/638.png",
+            "inicio": "(2004)",
+            "fin": "(2008)"
+        }
+    ],
+
+    "habilidades":[
+        {
+            "id":1,
+            "nombre":"HTML",
+            "porcentaje":50
+        },
+        {
+            "id":2,
+            "nombre":"CSS",
+            "porcentaje":50
+        },
+        {
+            "id":3,
+            "nombre":"JS",
+            "porcentaje":4
+        },
+        {
+            "id":4,
+            "nombre":"ANGULAR",
+            "porcentaje":10
+        },
+        {
+            "id":5,
+            "nombre":"GITHUB",
+            "porcentaje":70
+        },
+        {
+            "id":6,
+            "nombre":"BOOTSTRAP",
+            "porcentaje":50
+        },
+        {
+            "id":7,
+            "nombre":"TS",
+            "porcentaje":2
+        },
+        {
+            "id":8,
+            "nombre":"JAVA",
+            "porcentaje":1
+        },
+        {
+            "id":9,
+            "nombre":"MYSQL",
+            "porcentaje":1
+        },
+        {
+            "id":10,
+            "nombre":"INGLES",
+            "porcentaje":90
+        },
+        {
+            "id":11,
+            "nombre":"JAPONES",
+            "porcentaje":3
+        }
+    ],
+
+    "proyecto":[
+        {
+            "id":1,
+            "img": "../../../assets/img/proyecto1.jpg",
+            "nombre": "Mí Proyecto.",
+            "descripcion": "Muestra de mí portfolio como parte del proyecto final integrador del curso Argentina Programa #YoProgramo",
+            "url": "https://github.com/YaelNmr/ProyectoFinal.git"
+        }
+    ]
+}
+
+
+

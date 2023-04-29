@@ -1,0 +1,24 @@
+.list-group{
+    --bs-list-group-bg:transparent !important;
+  }
+  .fa-brands.fa-facebook:hover{
+      --bs-text-opacity: 1;
+      color:#1602ce !important;
+  }
+  .fa-brands.fa-instagram:hover{
+    --bs-text-opacity: 1;
+    color:#ff006af3 !important;
+  }
+  .fa-brands.fa-twitter:hover{
+    --bs-text-opacity: 1;
+    color:#00aeff !important;
+  }
+  .fa-brands.fa-github:hover{
+    --bs-text-opacity: 1;
+    color:#dc37fd !important;
+  }
+  .fa-brands.fa-linkedin:hover{
+    --bs-text-opacity: 1;
+    color:#0a66c2 !important;
+  }
+  /*fin estilos redes*/

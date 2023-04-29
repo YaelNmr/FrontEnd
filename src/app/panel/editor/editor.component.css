@@ -1,0 +1,9 @@
+/*PANEL, Menu edicion, Botones Taps (no modal), banner, de redes, etc del panel*/
+
+.menu{  /**Esto es el <div class="row menu"> */
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-bottom: 100px;
+    margin-left: 25px;
+  }
+

@@ -1,0 +1,9 @@
+<!--Sección Habilidades-->
+<h1 class="barras text-center"><strong>Mis Habilidades</strong></h1><br>
+<h3 class="lenguajes text-center">Lenguajes y Herramientas aprendidos en #YoProgramo - Idiomas.</h3>
+<section class="habilidades mt-4 text-center">
+    <div class="progress-circle-container" *ngFor="let habilidades of skills">
+      <div class="progress-circle progress-{{habilidades.porcentaje}}"><span>{{habilidades.nombre}}</span></div> 
+    </div>
+  </section> 
+  <hr>

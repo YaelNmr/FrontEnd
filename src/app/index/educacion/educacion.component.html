@@ -1,0 +1,21 @@
+<!--Sección Educación-->
+<section class="educacion mt-4">
+    <div class="container">
+      <div class="row">
+        <h2 class="text-center">Estudios</h2>
+        <div class="col-md-4 card-container" *ngFor="let education of educacion"> 
+          <div class="card front">
+            <img [src]="education.logo" alt="logo-argpro" class="card-img-top img-fluid">
+            <div class="card-block">
+              <h5 class="card-title"><strong>{{education.institucion}}</strong></h5>
+              <p class="card-text">{{education.titulo}} {{education.inicio}}-{{education.fin}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <hr>
+
+<!--*ngFor es para iterar (repetir varias veces) sobre la variable y mostrar los datos por medio de interpolación-->

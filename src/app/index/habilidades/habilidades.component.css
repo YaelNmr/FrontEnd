@@ -1,0 +1,120 @@
+/*Sección Habilidades*/
+/*Estructura de los Circulos*/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: #63B8FF;
+  text-align: center;
+}
+
+.progress-circle {
+  position: relative;
+  display: inline-block;
+  margin: 1rem;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #ebebeb;
+}
+
+.progress-circle:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-animation: colorload 2s;
+  animation: colorload 2s;
+}
+
+.progress-circle span {
+  font-size: 1rem;
+  color: #8b8b8b;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  margin-left: -45px;
+  margin-top: -45px;
+  text-align: center;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 1;
+}
+
+.progress-circle span:after {
+  content: "%";
+  font-weight: 600;
+  color: #8b8b8b;
+}
+
+@keyframes colorload {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+
+/*Fin Estructura de los Circulos*/
+
+/*Los Circulos con habilidades incluidas*/
+.progress-circle.progress-50:after {   /*HTML*/
+  background-image: linear-gradient(-90deg, #66b8ff 50%, transparent 50%, transparent), linear-gradient(270deg, #66b8ff 50%, #ebebeb 50%, #ebebeb);
+}
+
+.progress-circle.progress-50:after {   /*CSS*/
+  background-image: linear-gradient(-90deg, #66b8ff 50%, transparent 50%, transparent), linear-gradient(270deg, #66b8ff 50%, #ebebeb 50%, #ebebeb);
+}
+
+.progress-circle.progress-4:after {  /*JS*/
+  background-image: linear-gradient(90deg, #ebebeb 50%, transparent 50%, transparent), linear-gradient(104.4deg, #66b8ff 50%, #ebebeb 50%, #ebebeb);
+}
+
+.progress-circle.progress-10:after {  /*ANGULAR*/
+  background-image: linear-gradient(90deg, #ebebeb 50%, transparent 50%, transparent), linear-gradient(126deg, #66b8ff 50%, #ebebeb 50%, #ebebeb);
+}
+
+
+.progress-circle.progress-70:after {   /*GITHUB*/
+  background-image: linear-gradient(-18deg, #66b8ff 50%, transparent 50%, transparent), linear-gradient(270deg, #66b8ff 50%, #ebebeb 50%, #ebebeb);
+}
+
+.progress-circle.progress-50:after {   /*BOOTSTRAP*/
+  background-image: linear-gradient(-90deg, #66b8ff 50%, transparent 50%, transparent), linear-gradient(270deg, #66b8ff 50%, #ebebeb 50%, #ebebeb);
+}
+
+.progress-circle.progress-2:after {  /*TYPESCRIPT*/
+  background-image: linear-gradient(90deg, #ebebeb 50%, transparent 50%, transparent), linear-gradient(97.2deg, #66b8ff 50%, #ebebeb 50%, #ebebeb);
+}
+
+.progress-circle.progress-1:after {  /*JAVA*/
+  background-image: linear-gradient(90deg, #ebebeb 50%, transparent 50%, transparent), linear-gradient(93.6deg, #66b8ff 50%, #ebebeb 50%, #ebebeb);
+}
+
+.progress-circle.progress-1:after {  /*MYSQL*/
+  background-image: linear-gradient(90deg, #ebebeb 50%, transparent 50%, transparent), linear-gradient(93.6deg, #66b8ff 50%, #ebebeb 50%, #ebebeb);
+}
+
+/*Fin de los circulos con habilidades incluidas*/
+
+/*Idiomas*/
+.progress-circle.progress-90:after {   /*INGLES*/
+  background-image: linear-gradient(54deg, #66b8ff 50%, transparent 50%, transparent), linear-gradient(270deg, #66b8ff 50%, #ebebeb 50%, #ebebeb);
+}
+
+.progress-circle.progress-3:after {   /*JAPONÉS*/
+  background-image: linear-gradient(90deg, #ebebeb 50%, transparent 50%, transparent), linear-gradient(108deg, #66b8ff 50%, #ebebeb 50%, #ebebeb);
+}
+
+/*Fin de idiomas*/
+/*Fin de Sección Habilidades*/

@@ -1,0 +1,24 @@
+<!--Sección Experiencia Laboral-->
+<section class="experiencia mt-4">
+    <div class="container">
+      <div class="row">
+        <h2 class="text-center">Experiencia Laboral</h2>
+        <div class="col-md-4 card-container" *ngFor="let trabajo of trabajos">
+          <div class="card front">
+            <img [src]="trabajo.imagen" alt="kuma-logo" class="card-img-top img-fluid">
+            <div class="card-block">
+              <h4 class="card-title"><strong>{{trabajo.nombre}}</strong>
+                <h6>{{trabajo.inicioyFin}}</h6>
+              </h4>
+              <p class="card-text"><strong>{{trabajo.puesto}}</strong>: {{trabajo.descripcion}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <hr>
+  
+<!--En la maqueta estática solo tenía 3 cards porque había puesto dos experiencias en una card y 2 experiencias en otra.
+  Ahora son 5 cards porque en el archivo json (array) escribí 5 id, uno por cada experiencia-->
