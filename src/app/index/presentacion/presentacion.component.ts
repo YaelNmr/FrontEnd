@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ProyectoService } from 'src/app/servicios/proyecto.service';
+import { Persona } from 'src/app/entities/persona';
+import { PersonaService } from 'src/app/servicios/persona.service';
 
 @Component({
   selector: 'app-presentacion',
@@ -7,12 +8,10 @@ import { ProyectoService } from 'src/app/servicios/proyecto.service';
   styleUrls: ['./presentacion.component.css']
 })
 export class PresentacionComponent implements OnInit {
-  miProyecto:any;
-  constructor(private datosProyecto:ProyectoService) { }
+  person: Persona[]=[];
+  constructor(private sPersona:PersonaService) { }
 
   ngOnInit(): void {
-    this.datosProyecto.obtenerDatos().subscribe(datos =>{
-      this.miProyecto=datos;
-    });
+   this.sPersona.list().subscribe(data => {this.person = data})
   }
 }

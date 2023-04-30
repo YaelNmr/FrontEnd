@@ -1,5 +1,6 @@
 import { Component, OnInit  } from '@angular/core';
-import { ProyectoService } from 'src/app/servicios/proyecto.service';
+import { Experiencia } from 'src/app/entities/experiencia';
+import { ExperienciaService } from 'src/app/servicios/experiencia.service';
 
 @Component({
   selector: 'app-experiencia',
@@ -7,12 +8,10 @@ import { ProyectoService } from 'src/app/servicios/proyecto.service';
   styleUrls: ['./experiencia.component.css']
 })
 export class ExperienciaComponent implements OnInit {
-  trabajos:any=[];
-  constructor(private datosProyecto:ProyectoService) { }
+  experiencias: Experiencia[]=[];     //se llama a la entity(o tambien llamado entities, model, modelo) con un array 
+  constructor(private sExperiencia:ExperienciaService) { }    //se llama al servicio TS experiencia
 
   ngOnInit(): void {
-    this.datosProyecto.obtenerDatos().subscribe(datos =>{
-      this.trabajos=datos.experiencias;
-    })
+    this.sExperiencia.list().subscribe(data => {this.experiencias = data})
   }
 }

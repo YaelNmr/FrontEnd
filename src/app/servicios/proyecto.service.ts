@@ -1,15 +1,32 @@
-import { HttpClient } from '@angular/common/http';  //Hacer peticiones y CRUD (create, read, update, delete).
-import { Injectable } from '@angular/core';        //permite que el servicio sea "inyectado" en los componentes y los componentes los consumen.
-import { Observable } from 'rxjs';                //Observable: es para suscribirse a los datos que vienen del JSON, una vez que se suscribe a los datos si hay cambios en el JSON los puede ver, recibe respuestas asincrona.
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Proyecto } from '../entities/proyecto';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProyectoService {
-                   //"http" es solo un alias, se puede poner otro nombre, lo que quiera.
-  constructor(private http:HttpClient) { }
+  url='http://localhost:8080/proyecto/'
+  constructor(private httpClient:HttpClient) { }
 
-  obtenerDatos():Observable<any>{                                 //método observable que devuelve los datos. Siempre escribir la primer palabra en minúscula y la siguiente en mayúscula.
-    return this.http.get('./assets/datos/datosproyecto.json');   //retorno de datos utilizando el método GET de HttpClient que llama a la base de datos JSON ó a una URL.
+  public list():Observable<Proyecto[]>{
+    return this.httpClient.get<Proyecto[]>(this.url + 'lista')
+  }
+
+  public ver(id:number):Observable<Proyecto>{  
+    return this.httpClient.get<Proyecto>(this.url + `ver/${id}`)
+  }
+
+  public agregar(proyecto:Proyecto):Observable<any>{
+    return this.httpClient.post<any>(this.url + 'crear', proyecto) 
+  }
+
+  public update(proyecto:Proyecto):Observable<any>{
+    return this.httpClient.put<any>(this.url + 'actualizar', proyecto)
+  }
+
+  public eliminar(id:number):Observable<any>{ 
+    return this.httpClient.delete<any>(this.url + `borrar/${id}`)
   }
 }

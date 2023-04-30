@@ -1,15 +1,15 @@
 <!--Sección Presentación-->
-<section class="presentacion mt-5">
+<section class="presentacion mt-5" *ngFor="let persona of person">
     <div class="container text-center">
       <div class="row">
         <div class="col-3">
-          <img [src]="miProyecto.profileImage" alt="foto-yael" class="rounded-circle img-fluid">
+          <img [src]="persona.profileImage" alt="foto-yael" class="rounded-circle img-fluid">
         </div>
         <div class="col-9 mt-4">
           <div class="acerca-de">
-            <h2><i>{{miProyecto.subtitulo}}</i></h2>
+            <h2><i>{{persona.subtitulo}}</i></h2>
             <p>
-              {{miProyecto.acercadeMi}}
+              {{persona.acercadeMi}}
             </p>
           </div>
         </div>

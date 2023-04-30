@@ -3,12 +3,12 @@
     <div class="container">
       <div class="row">
         <h2 class="text-center">Estudios</h2>
-        <div class="col-md-4 card-container" *ngFor="let education of educacion"> 
+        <div class="col-md-4 card-container" *ngFor="let estudio of estudios "> 
           <div class="card front">
-            <img [src]="education.logo" alt="logo-argpro" class="card-img-top img-fluid">
+            <img [src]="estudio.logo" alt="logo-argpro" class="card-img-top img-fluid">
             <div class="card-block">
-              <h5 class="card-title"><strong>{{education.institucion}}</strong></h5>
-              <p class="card-text">{{education.titulo}} {{education.inicio}}-{{education.fin}}</p>
+              <h5 class="card-title"><strong>{{estudio.institucion}}</strong></h5>
+              <p class="card-text">{{estudio.titulo}} {{estudio.inicio}}-{{estudio.fin}}</p>
             </div>
           </div>
         </div>
