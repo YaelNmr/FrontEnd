@@ -16,7 +16,6 @@ import { ProyectosComponent } from './index/proyectos/proyectos.component';
 import { FooterComponent } from './index/footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { ErrorComponent } from './error/error.component';
-import { FormularioComponent } from './login/formulario/formulario.component';
 import { RegistroComponent } from './registro/registro.component';
 import { FormularioregComponent } from './registro/formularioreg/formularioreg.component';
 import { PanelComponent } from './panel/panel.component';
@@ -31,6 +30,7 @@ import { EdittrabajoComponent } from './panel/editor/barvertical/edittrabajo/edi
 import { EditeducacionComponent } from './panel/editor/barvertical/editeducacion/editeducacion.component';
 import { EditskillsComponent } from './panel/editor/barvertical/editskills/editskills.component';
 import { EditproyectoComponent } from './panel/editor/barvertical/editproyecto/editproyecto.component';
+import { InterceptorProvider } from './servicios/interceptor-service';
 
 
 
@@ -49,7 +49,6 @@ import { EditproyectoComponent } from './panel/editor/barvertical/editproyecto/e
     FooterComponent,
     LoginComponent,
     ErrorComponent,
-    FormularioComponent,
     RegistroComponent,
     FormularioregComponent,
     PanelComponent,
@@ -74,7 +73,9 @@ import { EditproyectoComponent } from './panel/editor/barvertical/editproyecto/e
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    InterceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
