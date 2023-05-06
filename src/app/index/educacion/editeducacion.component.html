@@ -1,0 +1,26 @@
+<div class="container" *ngIf="estuEdit">    <!--el Objeto estuEdit llama a los Atributos institucion, titulo, inicio, fin-->
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="col-md-4 card-container">
+                    <div class="card front">
+                    <img [src]="" alt="logo" class="card-img-top img-fluid">
+                    <label for="imagen" class="form-label">Imagen/Logo(máx 550x366px)</label>
+                    <input class="form-control" type="file" id="imagen">
+                    <div class="card-block">
+                        <label for="institucion"><p class="card-title">Nombre de la Institución</p></label>
+                        <input type="text" class="form-control" id="institucion" [(ngModel)]="estuEdit.institucion" name="institucion" required>
+                        <label for="titulo"><p>Título</p></label>
+                        <input type="text" class="form-control" id="titulo" [(ngModel)]="estuEdit.titulo" name="titulo" required>
+                        <label for="inicio"><p class="card-text">Fecha Inicio</p></label>
+                        <input type="text" class="form-control" id="inicio" [(ngModel)]="estuEdit.inicio" name="inicio" required>
+                        <label for="fin"><p class="card-text">Fecha Finalización</p></label>
+                        <input type="text" class="form-control" id="fin" [(ngModel)]="estuEdit.fin" name="fin" required>
+                    </div>
+                      <button class="btn btn-primary">Guardar</button>
+                    </div>
+                  </div>
+            </form>
+        </div>
+    </div>
+</div>

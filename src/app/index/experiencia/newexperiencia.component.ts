@@ -24,12 +24,12 @@ export class NewexperienciaComponent implements OnInit {
     const expe = new Experiencia(this.nombre, this.puesto, this.inicioyFin, this.imagen, this.descripcion);
     this.sExperiencia.agregar(expe).subscribe(
       data =>{
-        alert("Experiencia añadida");
-        this.router.navigate([''])
+        alert("Experiencia añadida correctamente");
+        this.router.navigate(['']);
     }, err => {
       alert("Falló");
       this.router.navigate(['']);
     }
-    )
-}
+   )
+ }
 }

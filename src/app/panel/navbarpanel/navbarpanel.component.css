@@ -1,7 +1,0 @@
- /*Barra de navegación*/
- .bg-violet {
-    background-color: #000000;
-}
-.list-group{
-  --bs-list-group-bg:transparent !important;
-}

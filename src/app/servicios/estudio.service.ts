@@ -15,7 +15,7 @@ export class EstudioService {
   }
 
   public ver(id:number):Observable<Estudio>{  
-    return this.httpClient.get<Estudio>(this.url + `ver/${id}`)
+    return this.httpClient.get<Estudio>(this.url + `ver/${id}`)  //el acento grave `` es para mandar por parametros el id
   }
 
   public agregar(estudio:Estudio):Observable<any>{

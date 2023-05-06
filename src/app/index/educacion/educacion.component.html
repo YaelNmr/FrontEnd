@@ -3,14 +3,19 @@
     <div class="container">
       <div class="row">
         <h2 class="text-center">Estudios</h2>
+        <div class="col-lg-12">
+          <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">Agregar Estudio</button>
+        </div>
         <div class="col-md-4 card-container" *ngFor="let estudio of estudios "> 
           <div class="card front">
-            <img [src]="estudio.logo" alt="logo-argpro" class="card-img-top img-fluid">
+            <img [src]="estudio.logo" alt="logo" class="card-img-top img-fluid">
             <div class="card-block">
               <h5 class="card-title"><strong>{{estudio.institucion}}</strong></h5>
               <p class="card-text">{{estudio.titulo}} {{estudio.inicio}}-{{estudio.fin}}</p>
             </div>
           </div>
+          <button class="btn btn-info" routerLink="/editedu/{{estudio.id}}" *ngIf="isLogged"><i class="fa-solid fa-pencil fa-xl"></i></button> 
+          <button class="btn btn-danger" (click)="delete(estudio.id)" *ngIf="isLogged"><i class="fa-solid fa-trash fa-xl"></i></button>  
         </div>
       </div>
     </div>

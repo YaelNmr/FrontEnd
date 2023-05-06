@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule} from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-
 import { AppComponent } from './app.component';
+
 import { IndexComponent } from './index/index.component';
 import { NavbarComponent } from './index/navbar/navbar.component';
 import { BannerComponent } from './index/banner/banner.component';
@@ -18,24 +18,14 @@ import { LoginComponent } from './login/login.component';
 import { ErrorComponent } from './error/error.component';
 import { RegistroComponent } from './registro/registro.component';
 import { FormularioregComponent } from './registro/formularioreg/formularioreg.component';
-import { PanelComponent } from './panel/panel.component';
-import { NavbarpanelComponent } from './panel/navbarpanel/navbarpanel.component';
 import { RedesComponent } from './index/navbar/redes/redes.component';
-import { EditorComponent } from './panel/editor/editor.component';
-import { BarverticalComponent } from './panel/editor/barvertical/barvertical.component';
-import { EditredesComponent } from './panel/editor/barvertical/editredes/editredes.component';
-import { EditbannerComponent } from './panel/editor/barvertical/editbanner/editbanner.component';
-import { EditinfoComponent } from './panel/editor/barvertical/editinfo/editinfo.component';
-import { EdittrabajoComponent } from './panel/editor/barvertical/edittrabajo/edittrabajo.component';
-import { EditeducacionComponent } from './panel/editor/barvertical/editeducacion/editeducacion.component';
-import { EditskillsComponent } from './panel/editor/barvertical/editskills/editskills.component';
-import { EditproyectoComponent } from './panel/editor/barvertical/editproyecto/editproyecto.component';
 import { InterceptorProvider } from './servicios/interceptor-service';
 import { NewexperienciaComponent } from './index/experiencia/newexperiencia.component';
 import { EditexperienciaComponent } from './index/experiencia/editexperiencia.component';
-
-
-
+import { NeweducacionComponent } from './index/educacion/neweducacion.component';
+import { EditeducacionComponent } from './index/educacion/editeducacion.component';
+import { NewhabilidadComponent } from './index/habilidades/newhabilidad.component';
+import { EdithabilidadComponent } from './index/habilidades/edithabilidad.component';
 
 
 @NgModule({
@@ -54,23 +44,14 @@ import { EditexperienciaComponent } from './index/experiencia/editexperiencia.co
     ErrorComponent,
     RegistroComponent,
     FormularioregComponent,
-    PanelComponent,
-    NavbarpanelComponent,
     RedesComponent,
-    EditorComponent,
-    BarverticalComponent,
-    EditredesComponent,
-    EditbannerComponent,
-    EditinfoComponent,
-    EdittrabajoComponent,
-    EditeducacionComponent,
-    EditskillsComponent,
-    EditproyectoComponent,
     NewexperienciaComponent,
     EditexperienciaComponent,
+    NeweducacionComponent,
+    EditeducacionComponent,
+    NewhabilidadComponent,
+    EdithabilidadComponent,
   
-
-    
 
   ],
   imports: [

@@ -1,10 +1,15 @@
 <!--Sección Habilidades-->
 <h1 class="barras text-center"><strong>Mis Habilidades</strong></h1><br>
 <h3 class="lenguajes text-center">Lenguajes y Herramientas aprendidos en #YoProgramo. - Idiomas.</h3>
+<div class="col-lg-2">
+  <button type="button" class="btn btn-dark" routerLink="/newhab" *ngIf="isLogged">Nueva Habilidad</button>
+</div>
 <section class="habilidades mt-4 text-center">
   <div class="row col-mt-4">
-    <div class="progress-circle-container col-sm" *ngFor="let habilidades of habilidades">
-      <div class="progress-circle progress-{{habilidades.porcentaje}}"><span>{{habilidades.nombre}}</span></div> 
+    <div class="progress-circle-container col-sm" *ngFor="let habilidad of habilidades">
+      <div class="progress-circle progress-{{habilidad.porcentaje}}"><span>{{habilidad.nombre}}</span></div> 
+      <button class="btn btn-success" routerLink="/edithab/{{habilidad.id}}" *ngIf="isLogged"><i class="fa-solid fa-pencil fa-xs"></i></button> 
+      <button class="btn btn-danger" (click)="delete(habilidad.id)" *ngIf="isLogged"><i class="fa-solid fa-trash fa-xs"></i></button>         
     </div>
   </div>
 </section> 

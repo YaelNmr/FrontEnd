@@ -26,4 +26,16 @@ export class HabilidadesComponent implements OnInit {
   cargarHabilidad(): void {
     this.sHabilidad.list().subscribe(data =>{this.habilidades = data})
   }
-}
+
+  delete(id: number){
+    if(id != undefined){
+      this.sHabilidad.eliminar(id).subscribe(
+        data =>{
+          this.cargarHabilidad();
+        }, err => {
+          alert("No se pudo borrar la habilidad");
+        }
+        )
+      }
+    }
+  }
