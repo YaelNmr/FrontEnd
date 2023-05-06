@@ -4,8 +4,8 @@ import { Observable } from 'rxjs';
 import { Experiencia } from '../entities/experiencia';
 
 @Injectable({
-  providedIn: 'root'
-})
+  providedIn: 'root'                        //todo esto sale del Controller de netbeans
+})                                          
 export class ExperienciaService {
   url='http://localhost:8080/experiencia/'   //la / al final es para llamar solo al sectorcito experiencia. sin la / al final llamaria a todo
   constructor(private httpClient:HttpClient) { } 
@@ -22,8 +22,8 @@ export class ExperienciaService {
     return this.httpClient.post<any>(this.url + 'crear', experiencia) //la url se pone asi porque tengo un @RequestBody de experiencia en netbeans, esta expriencia se retorna
   }
 
-  public update(experiencia:Experiencia):Observable<any>{
-    return this.httpClient.put<any>(this.url + 'actualizar', experiencia)
+  public update(id: number, experiencia:Experiencia):Observable<any>{
+    return this.httpClient.put<any>(this.url + `actualizar/${id}`, experiencia)
   }
 
   public eliminar(id:number):Observable<any>{ 

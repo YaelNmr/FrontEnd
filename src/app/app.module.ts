@@ -31,6 +31,9 @@ import { EditeducacionComponent } from './panel/editor/barvertical/editeducacion
 import { EditskillsComponent } from './panel/editor/barvertical/editskills/editskills.component';
 import { EditproyectoComponent } from './panel/editor/barvertical/editproyecto/editproyecto.component';
 import { InterceptorProvider } from './servicios/interceptor-service';
+import { NewexperienciaComponent } from './index/experiencia/newexperiencia.component';
+import { EditexperienciaComponent } from './index/experiencia/editexperiencia.component';
+
 
 
 
@@ -63,6 +66,10 @@ import { InterceptorProvider } from './servicios/interceptor-service';
     EditeducacionComponent,
     EditskillsComponent,
     EditproyectoComponent,
+    NewexperienciaComponent,
+    EditexperienciaComponent,
+  
+
     
 
   ],
@@ -71,7 +78,8 @@ import { InterceptorProvider } from './servicios/interceptor-service';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+   
   ],
   providers: [
     InterceptorProvider

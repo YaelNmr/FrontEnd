@@ -22,8 +22,8 @@ export class HabilidadService {
     return this.httpClient.post<any>(this.url + 'crear', habilidad)
   }
 
-  public update(habilidad:Habilidad):Observable<any>{
-    return this.httpClient.put<any>(this.url + 'actualizar', habilidad)
+  public update(id: number, habilidad:Habilidad):Observable<any>{
+    return this.httpClient.put<any>(this.url + `actualizar/${id}`, habilidad)
   }
 
   public eliminar(id:number):Observable<any>{ 

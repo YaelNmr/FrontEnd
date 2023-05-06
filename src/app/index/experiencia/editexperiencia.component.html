@@ -1,0 +1,26 @@
+<div class="container" *ngIf="expeEdit">  <!--esto es para que se pueda editar siempre y cuando tengo una experiencia-->
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="col-md-4 card-container">
+                    <div class="card front">
+                    <img [src]="" alt="img" class="card-img-top img-fluid">
+                    <label for="imagen" class="form-label">Imagen/Logo(máx 550x366px)</label>
+                    <input class="form-control" type="file" id="imagen">
+                    <div class="card-block">
+                        <label for="nombre"><p class="card-title">Nombre de la Empresa</p></label>
+                        <input type="text" class="form-control" id="nombre" [(ngModel)]="expeEdit.nombre" name="nombre" required>
+                        <label for="inicioyFin"><p>Fecha</p></label>
+                        <input type="text" class="form-control" id="inicioyFin" [(ngModel)]="expeEdit.inicioyFin" name="inicioyFin" required>
+                        <label for="puesto" for="descripcion"><p class="card-text">Puesto</p></label>
+                        <input type="text" class="form-control" id="puesto" [(ngModel)]="expeEdit.puesto" name="puesto" required>
+                        <label for="puesto" for="descripcion"><p class="card-text">Descripción</p></label>
+                        <input type="text" class="form-control" id="descripcion" [(ngModel)]="expeEdit.descripcion" name="descripcion" required>
+                    </div>
+                      <button class="btn btn-info">Actualizar</button>
+                    </div>
+                  </div>
+            </form>
+        </div>
+    </div>
+</div>
