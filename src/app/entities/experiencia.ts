@@ -1,12 +1,12 @@
 export class Experiencia {
       id?: number;
-      nombre: String;
-      puesto: String;  
-      inicioyFin: String;
-      imagen: String;
-      descripcion: String;
+      nombre: string;
+      puesto: string;  
+      inicioyFin: string;
+      imagen: string;
+      descripcion: string;
      
-      constructor (nombre:String, puesto:String, inicioyFin:String, imagen:String, descripcion:String) {
+      constructor (nombre:string, puesto:string, inicioyFin:string, imagen:string, descripcion:string) {
         this.nombre = nombre;
         this.puesto = puesto;
         this.inicioyFin = inicioyFin;

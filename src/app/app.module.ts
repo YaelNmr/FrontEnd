@@ -16,8 +16,6 @@ import { ProyectosComponent } from './index/proyectos/proyectos.component';
 import { FooterComponent } from './index/footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { ErrorComponent } from './error/error.component';
-import { RegistroComponent } from './registro/registro.component';
-import { FormularioregComponent } from './registro/formularioreg/formularioreg.component';
 import { RedesComponent } from './index/navbar/redes/redes.component';
 import { InterceptorProvider } from './servicios/interceptor-service';
 import { NewexperienciaComponent } from './index/experiencia/newexperiencia.component';
@@ -42,8 +40,6 @@ import { EdithabilidadComponent } from './index/habilidades/edithabilidad.compon
     FooterComponent,
     LoginComponent,
     ErrorComponent,
-    RegistroComponent,
-    FormularioregComponent,
     RedesComponent,
     NewexperienciaComponent,
     EditexperienciaComponent,
@@ -51,6 +47,7 @@ import { EdithabilidadComponent } from './index/habilidades/edithabilidad.compon
     EditeducacionComponent,
     NewhabilidadComponent,
     EdithabilidadComponent,
+
   
 
   ],

@@ -1,12 +1,12 @@
 export class Estudio {
     id?:number;
-    titulo:String ;
-    institucion:String ;
-    logo:String;
-    inicio:String;
-    fin:String;
+    titulo: string ;
+    institucion: string ;
+    logo: string;
+    inicio:string;
+    fin: string;
 
-    constructor (titulo:String, institucion:String, logo:String, inicio:String, fin:String) {
+    constructor (titulo:string, institucion:string, logo:string, inicio:string, fin:string) {
         this.titulo = titulo;
         this.institucion = institucion;
         this.logo = logo;

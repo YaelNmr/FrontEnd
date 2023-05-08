@@ -1,12 +1,12 @@
 export class Persona {
     id?:number;
-    nombre:String;
-    titulo:String;
-    profileImage:String;
-    subtitulo:String;
-    acercadeMi:String;
+    nombre:string;
+    titulo:string;
+    profileImage:string;
+    subtitulo:string;
+    acercadeMi:string;
 
-    constructor (nombre:String, titulo:String, profileImage:String, subtitulo:String, acercadeMi:String) {
+    constructor (nombre:string, titulo:string, profileImage:string, subtitulo:string, acercadeMi:string) {
         this.nombre = nombre;
         this.titulo = titulo;
         this.profileImage = profileImage;
