@@ -7,7 +7,7 @@ import { Experiencia } from '../entities/experiencia';
   providedIn: 'root'                        //todo esto sale del Controller de netbeans
 })                                          
 export class ExperienciaService {
-  url='http://localhost:8080/experiencia/'   //la / al final es para llamar solo al sectorcito experiencia. sin la / al final llamaria a todo
+  url=' https://proyectoyael.onrender.com/experiencia/'   //la / al final es para llamar solo al sectorcito experiencia. sin la / al final llamaria a todo
   constructor(private httpClient:HttpClient) { } 
 
   public list():Observable<Experiencia[]>{

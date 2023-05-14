@@ -7,7 +7,7 @@ import { Persona } from '../entities/persona';
   providedIn: 'root'
 })
 export class PersonaService {
-  url='http://localhost:8080/persona/'
+  url=' https://proyectoyael.onrender.com/persona/'
   constructor(private httpClient:HttpClient) { }
   
   public list():Observable<Persona[]>{

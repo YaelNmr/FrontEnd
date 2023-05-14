@@ -7,7 +7,7 @@ import { Estudio } from '../entities/estudio';
   providedIn: 'root'
 })
 export class EstudioService {
-  url='http://localhost:8080/estudio/' 
+  url=' https://proyectoyael.onrender.com/estudio/' 
   constructor(private httpClient:HttpClient) { }
 
   public list():Observable<Estudio[]>{
