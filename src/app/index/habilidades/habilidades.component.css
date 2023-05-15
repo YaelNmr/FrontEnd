@@ -83,4 +83,19 @@ h1 {
 .progress-circle.progress-100:after {
   background-image: linear-gradient(90deg, #66b8ff 50%, transparent 50%, transparent), linear-gradient(270deg, #66b8ff 50%, #ebebeb 50%, #ebebeb); }
 
+  .progress-circle.progress-40:after {
+    background-image: linear-gradient(90deg, #ebebeb 50%, transparent 50%, transparent), linear-gradient(234deg, #66b8ff 50%, #ebebeb 50%, #ebebeb); }
+
+    .progress-circle.progress-45:after {
+      background-image: linear-gradient(90deg, #ebebeb 50%, transparent 50%, transparent), linear-gradient(252deg, #66b8ff 50%, #ebebeb 50%, #ebebeb); }
+      
+      .progress-circle.progress-20:after {
+        background-image: linear-gradient(90deg, #ebebeb 50%, transparent 50%, transparent), linear-gradient(151.2deg, #66b8ff 50%, #ebebeb 50%, #ebebeb); }
+      
+        
+.progress-circle.progress-70:after {
+  background-image: linear-gradient(-18deg, #66b8ff 50%, transparent 50%, transparent), linear-gradient(270deg, #66b8ff 50%, #ebebeb 50%, #ebebeb); }
+
+  .progress-circle.progress-90:after {
+    background-image: linear-gradient(54deg, #66b8ff 50%, transparent 50%, transparent), linear-gradient(270deg, #66b8ff 50%, #ebebeb 50%, #ebebeb); }
 /*Fin de Sección Habilidades*/

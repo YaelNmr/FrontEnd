@@ -6,9 +6,9 @@ import { Experiencia } from '../entities/experiencia';
 @Injectable({
   providedIn: 'root'                        //todo esto sale del Controller de netbeans
 })                                          
-export class ExperienciaService {
-  url=' https://proyectoyael.onrender.com/experiencia/'   //la / al final es para llamar solo al sectorcito experiencia. sin la / al final llamaria a todo
-  constructor(private httpClient:HttpClient) { } 
+export class ExperienciaService {                
+  url= 'http://localhost:8080/experiencia/'   //'http://localhost:8080/experiencia/'
+  constructor(private httpClient:HttpClient) { }             //la / al final es para llamar solo al sectorcito experiencia. sin la / al final llamaria a todo
 
   public list():Observable<Experiencia[]>{
     return this.httpClient.get<Experiencia[]>(this.url + 'lista')
