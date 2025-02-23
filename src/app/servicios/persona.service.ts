@@ -7,7 +7,7 @@ import { Persona } from '../entities/persona';
   providedIn: 'root'
 })
 export class PersonaService {
-  url= 'https://backendyael.onrender.com/persona/'             //'http://localhost:8080/persona/'
+  url= 'https://backendyael.onrender.com/persona/';             //'http://localhost:8080/persona/'
   constructor(private httpClient:HttpClient) { }
   
   public list():Observable<Persona[]>{
