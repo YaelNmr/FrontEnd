@@ -7,7 +7,7 @@ import { Estudio } from '../entities/estudio';
   providedIn: 'root'
 })
 export class EstudioService {
-  url= "https://backendyael.onrender.com/estudio/";       //'http://localhost:8080/estudio/'
+  url= 'https://backendyael.onrender.com/estudio/';       //'http://localhost:8080/estudio/'
   constructor(private httpClient:HttpClient) { }
 
   public list():Observable<Estudio[]>{

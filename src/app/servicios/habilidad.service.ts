@@ -7,7 +7,7 @@ import { Habilidad } from '../entities/habilidad';
   providedIn: 'root'
 })
 export class HabilidadService {
-  url= "https://backendyael.onrender.com/habilidad/";  //'http://localhost:8080/habilidad/'
+  url= 'https://backendyael.onrender.com/habilidad/';  //'http://localhost:8080/habilidad/'
   constructor(private httpClient:HttpClient) { }
 
   public list():Observable<Habilidad[]>{

@@ -12,15 +12,15 @@ import { EdithabilidadComponent } from './index/habilidades/edithabilidad.compon
 
 
 const routes: Routes = [
-  {path: '', component:IndexComponent },
-  {path: 'login', component:LoginComponent },
+  {path: '', component:IndexComponent},
+  {path: 'login', component:LoginComponent},
   {path: 'nuevaexp', component:NewexperienciaComponent},
   {path: 'editexp/:id', component:EditexperienciaComponent},
   {path: 'nuevaedu', component:NeweducacionComponent},
   {path: 'editedu/:id', component:EditeducacionComponent},
   {path: 'newhab', component:NewhabilidadComponent},
   {path: 'edithab/:id', component:EdithabilidadComponent},
-  {path: '**', component:ErrorComponent },
+  {path: '**', component:ErrorComponent},
   
 
 ];
