@@ -1,6 +1,6 @@
 {
   "projects": {
-    "default": "portfolio-frontend-yael",
+    "default": "portfolio-yael",
     "MyPortfolio-Yael": "portfolio-yael"
   },
   "targets": {},
