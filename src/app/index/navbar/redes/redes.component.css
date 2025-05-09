@@ -1,5 +1,6 @@
 .list-group{
-    --bs-list-group-bg: #000000; 
+    --bs-list-group-bg:transparent !important;
+    --bs-list-group-bg-opacity:var(--bs-list-group-bg)
      
   }
   .fa-brands.fa-facebook:hover{
