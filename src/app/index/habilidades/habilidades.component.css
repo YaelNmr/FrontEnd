@@ -9,6 +9,11 @@ h1 {
   text-align: center;
 }
 
+h2{
+  text-align: center;
+  color: #580986;
+}
+
 .progress-circle {
   position: relative;
   display: inline-block;
