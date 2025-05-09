@@ -1,5 +1,6 @@
 .list-group{
     --bs-list-group-bg:transparent !important;
+     background-color: #000000;
   }
   .fa-brands.fa-facebook:hover{
       --bs-text-opacity: 1;
@@ -20,9 +21,5 @@
   .fa-brands.fa-linkedin:hover{
     --bs-text-opacity: 1;
     color:#0a66c2 !important;
-  }
-
-  li{
-    background-color: #000000;
   }
   /*fin estilos redes*/
