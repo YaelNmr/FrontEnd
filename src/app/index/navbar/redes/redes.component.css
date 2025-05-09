@@ -21,4 +21,8 @@
     --bs-text-opacity: 1;
     color:#0a66c2 !important;
   }
+
+  li{
+    background-color: #000000;
+  }
   /*fin estilos redes*/
