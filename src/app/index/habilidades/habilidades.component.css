@@ -9,9 +9,9 @@ h1 {
   text-align: center;
 }
 
-h2{
-  text-align: center;
-  color: #580986;
+ul{
+  text-align: initial;
+  margin-left: 100px;
 }
 
 .progress-circle {
