@@ -10,7 +10,8 @@ h1 {
 }
 
 ul{
-  text-align: center;
+  text-align: initial;
+  
 }
 
 .progress-circle {
