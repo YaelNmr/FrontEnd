@@ -10,7 +10,7 @@ El portfolio permite mostrar información personal, estudios, experiencia, habil
 
 Además de la parte pública, cuenta con un sistema de autenticación que permite acceder a una sección de administración desde la cual se puede gestionar el contenido mediante operaciones **CRUD**.
 
-El proyecto fue desarrollado como parte de las consignas del Proyecto Final Integrador de Argentina Programa y representa mi primera experiencia construyendo una aplicación Full Stack completa.
+El proyecto fue desarrollado siguiendo las consignas del curso de Argentina Programa y representa mi primera experiencia construyendo una aplicación Full Stack completa.
 
 ## 🚀 Tecnologías utilizadas
 
@@ -104,4 +104,4 @@ https://www.linkedin.com/in/yael-nemer
 
 ---
 
-Este repositorio forma parte de mi recorrido de aprendizaje y representa una etapa importante de mi formación como desarrolladora Full Stack.
+Este repositorio forma parte de mi recorrido de aprendizaje y representa el inicio de mi formación como desarrolladora Full Stack.
