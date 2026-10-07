@@ -1,19 +1,23 @@
 <!--Sección Presentación-->
 <section class="presentacion mt-5" *ngFor="let persona of person">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-3">
-          <img [src]="persona.profileImage" alt="foto" class="rounded-circle img-fluid">
-        </div>
-        <div class="col-9 mt-4">
-          <div class="acerca-de">
-            <h2><i>{{persona.subtitulo}}</i></h2>
-            <p>
-              {{persona.acercadeMi}}
-            </p>
-          </div>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-3">
+        <img [src]="persona.profileImage" alt="foto" class="rounded-circle img-fluid">
+      </div>
+      <div class="col-9 mt-4">
+        <div class="acerca-de">
+          <h2><i>{{persona.subtitulo}}</i></h2>
+          <p>
+            {{persona.acercadeMi}}
+          </p>
         </div>
       </div>
     </div>
-  </section>
-  <hr>
+  </div>
+</section>
+<p class="text-center text-muted px-3">
+  Para ver el portfolio completo, puede ser necesario esperar unos segundos
+  mientras se inicia el backend.
+</p>
+<hr>

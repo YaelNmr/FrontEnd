@@ -1,16 +1,94 @@
 <!--Sección Proyectos-->
 <section class="proyectos mt-4">
-    <div class="container">
-      <h2 class="text-center"><strong>Proyectos</strong></h2>
-      <div class="cuadro-proyecto" *ngFor="let proyecto of proyectos" >
-        <div class="card text-bg-dark mb-3" style="width: 18rem;">
-          <img [src]="proyecto.img" class="card-img-top" alt="proyecto">
-          <div class="card-body">
-            <h5 class="card-title">{{proyecto.nombre}}</h5>
-            <p class="card-text">{{proyecto.descripcion}}</p>
-            <a href="https://github.com/YaelNmr/ProyectoFinal.git" target="_blank" class="btn btn-primary">Ver</a>
-          </div>
+  <div class="container">
+    <h2 class="text-center"><strong>Proyecto</strong></h2>
+    <div class="cuadro-proyecto" *ngFor="let proyecto of proyectos">
+      <div class="card text-bg-dark mb-3" style="width: 18rem;">
+        <img [src]="proyecto.img" class="card-img-top" alt="proyecto">
+        <div class="card-body">
+          <h5 class="card-title">{{proyecto.nombre}}</h5>
+          <p class="card-text">{{proyecto.descripcion}}</p>
+          <a href="https://github.com/YaelNmr/ProyectoFinal.git" target="_blank" class="btn btn-primary">Ver</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+
+  <!-- Galería del proyecto -->
+  <div class="galeria-proyecto mt-5">
+    <h2 class="text-center">
+      <strong>Galería del proyecto</strong>
+    </h2>
+
+    <p class="text-center text-muted px-3">
+      Algunas capturas del portfolio y del sistema de administración desarrollado
+      durante el curso. Las imágenes muestran el funcionamiento
+      del sistema de autenticación y del CRUD para gestionar la información almacenada
+      en la base de datos.
+    </p>
+
+    <div class="row justify-content-center mt-4">
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <figure class="text-center">
+          <a href="assets/img/galeria-login.png" target="_blank">
+            <img [src]="'../../../assets/img/galeria-login.png'" alt="Formulario de inicio de sesión del portfolio"
+              class="img-fluid">
+          </a>
+          <figcaption>Formulario utilizado para acceder a la administración del portfolio.</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <figure class="text-center">
+          <a href="assets/img/galeria-sesion-iniciada.png" target="_blank">
+            <img [src]="'../../../assets/img/galeria-sesion-iniciada.png'" alt="Portfolio con sesión iniciada"
+              class="img-fluid">
+          </a>
+          <figcaption>Una vez iniciada la sesión, el botón "Ingresar" cambia por "Cerrar Sesión".</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <figure class="text-center">
+          <a href="assets/img/galeria-habilidades.png" target="_blank">
+            <img [src]="'../../../assets/img/galeria-habilidades.png'" alt="Sección de habilidades del portfolio"
+              class="img-fluid">
+          </a>
+          <figcaption>Al acceder, también se muestran los botones para administrar el contenido mediante el CRUD.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <figure class="text-center">
+          <a href="assets/img/galeria-experiencias.png" target="_blank">
+            <img [src]="'../../../assets/img/galeria-experiencias.png'"
+              alt="Administración de experiencias mediante CRUD" class="img-fluid">
+          </a>
+          <figcaption>Los botones de "Editar" y "Agregar" abren sus respectivos formularios.</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <figure class="text-center">
+          <a href="assets/img/galeria-agregar-experiencia.png" target="_blank">
+            <img [src]="'../../../assets/img/galeria-agregar-experiencia.png'"
+              alt="Formulario para agregar una experiencia" class="img-fluid">
+          </a>
+          <figcaption>Formulario utilizado para agregar una nueva experiencia.</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <figure class="text-center">
+          <a href="assets/img/galeria-editar-experiencia.png" target="_blank">
+            <img [src]="'../../../assets/img/galeria-editar-experiencia.png'"
+              alt="Formulario para editar una experiencia" class="img-fluid">
+          </a>
+          <figcaption>Formulario utilizado para modificar una experiencia existente.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>

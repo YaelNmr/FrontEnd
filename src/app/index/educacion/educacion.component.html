@@ -1,26 +1,81 @@
 <!--Sección Educación-->
 <section class="educacion mt-4">
-    <div class="container">
-      <div class="row">
-        <h2 class="text-center"><strong>Estudios</strong></h2>
-        <div class="col-lg-12">
-          <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">Agregar Estudio</button>
+  <div class="container">
+    <div class="row">
+      <h2 class="text-center"><strong>Estudios</strong></h2>
+
+      <div class="col-lg-12">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+          Agregar Estudio
+        </button>
+      </div>
+
+      <div class="col-md-4 card-container" *ngFor="let estudio of estudios">
+        <div class="card front">
+          <img [src]="estudio.logo" alt="logo" class="card-img-top img-fluid">
+
+          <div class="card-block">
+            <h5 class="card-title">
+              <strong>{{estudio.institucion}}</strong>
+            </h5>
+
+            <p class="card-text">
+              {{estudio.titulo}} {{estudio.inicio}}-{{estudio.fin}}
+            </p>
+          </div>
         </div>
-        <div class="col-md-4 card-container" *ngFor="let estudio of estudios "> 
-          <div class="card front">
-            <img [src]="estudio.logo" alt="logo" class="card-img-top img-fluid">
-            <div class="card-block">
-              <h5 class="card-title"><strong>{{estudio.institucion}}</strong></h5>
-              <p class="card-text">{{estudio.titulo}} {{estudio.inicio}}-{{estudio.fin}}</p>
+
+        <button
+          class="btn btn-info"
+          routerLink="/editedu/{{estudio.id}}"
+          *ngIf="isLogged">
+          <i class="fa-solid fa-pencil fa-xl"></i>
+        </button>
+
+        <button
+          class="btn btn-danger"
+          (click)="delete(estudio.id)"
+          *ngIf="isLogged">
+          <i class="fa-solid fa-trash fa-xl"></i>
+        </button>
+      </div>
+
+      <!-- Certificados -->
+      <div class="col-12 mt-4">
+        <details>
+          <summary>Ver certificados</summary>
+
+          <div class="certificados mt-4">
+            <div class="certificado">
+              <h5 class="text-center">
+                Certificado #SéProgramar
+              </h5>
+
+              <img
+                src="assets/img/certificado-se-programar.png"
+                alt="Certificado de Argentina Programa #SéProgramar"
+                class="img-fluid">
+            </div>
+
+            <div class="certificado mt-4">
+              <h5 class="text-center">
+                Certificado #YoProgramo
+              </h5>
+
+              <img
+                src="assets/img/certificado-yo-programo.png"
+                alt="Certificado de Argentina Programa #YoProgramo"
+                class="img-fluid certificado-yoprogramo">
             </div>
           </div>
-          <button class="btn btn-info" routerLink="/editedu/{{estudio.id}}" *ngIf="isLogged"><i class="fa-solid fa-pencil fa-xl"></i></button> 
-          <button class="btn btn-danger" (click)="delete(estudio.id)" *ngIf="isLogged"><i class="fa-solid fa-trash fa-xl"></i></button>  
-        </div>
+        </details>
       </div>
+
     </div>
-  </section>
-  <br>
-  <hr>
+  </div>
+</section>
+
+<br>
+<hr>
 
 <!--*ngFor es para iterar (repetir varias veces) sobre la variable y mostrar los datos por medio de interpolación-->

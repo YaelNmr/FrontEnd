@@ -11,16 +11,22 @@
 <br>
 <h2 class="barras text-center"><strong>Mis Habilidades</strong></h2>
 <h3 class="lenguajes text-center">Lenguajes y Herramientas aprendidos en #YoProgramo.</h3>
+<p class="text-center text-muted px-3">
+  Los porcentajes mostrados corresponden al contexto de mi formación durante 2022–2023
+  y reflejan la estructura original de este proyecto.
+</p>
 <div class="col-lg-2">
   <button type="button" class="btn btn-dark" routerLink="/newhab" *ngIf="isLogged">Nueva Habilidad</button>
 </div>
 <section class="habilidades mt-4 text-center">
-  <div class="row col-mt-4">
-    <div class="progress-circle-container col-sm" *ngFor="let habilidad of habilidades">
-      <div class="progress-circle progress-{{habilidad.porcentaje}}"><span>{{habilidad.nombre}}</span></div> 
-      <button class="btn btn-success" routerLink="/edithab/{{habilidad.id}}" *ngIf="isLogged"><i class="fa-solid fa-pencil fa-xs"></i></button> 
-      <button class="btn btn-danger" (click)="delete(habilidad.id)" *ngIf="isLogged"><i class="fa-solid fa-trash fa-xs"></i></button>         
+     <div class="row col-mt-4">
+      <div class="progress-circle-container col-sm" *ngFor="let habilidad of habilidades">
+        <div class="progress-circle progress-{{habilidad.porcentaje}}"><span>{{habilidad.nombre}}</span></div>
+        <button class="btn btn-success" routerLink="/edithab/{{habilidad.id}}" *ngIf="isLogged"><i
+            class="fa-solid fa-pencil fa-xs"></i></button>
+        <button class="btn btn-danger" (click)="delete(habilidad.id)" *ngIf="isLogged"><i
+            class="fa-solid fa-trash fa-xs"></i></button>
+      </div>
     </div>
-  </div>
-</section> 
-  <hr>
+</section>
+<hr>
